@@ -55,8 +55,6 @@ app.post("/translation", async (req, res) => {
 
   try {
     const response = await axios.request(options);
-    console.log(response.data);
-
     res.status(200).json(response.data);
   } catch (err) {
     console.log(err);

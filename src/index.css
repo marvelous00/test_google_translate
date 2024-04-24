@@ -1,12 +1,12 @@
 * {
-  font-family: arial,sans-serif;
+  font-family: arial, sans-serif;
 }
 
 body {
   margin: 0;
   background-color: #202124;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   height: 100vh;
   align-items: center;
 }
@@ -15,13 +15,20 @@ body {
   display: flex;
   width: 652px;
   height: 360px;
+  gap: 20px;
 }
 
-.output, 
+.output,
 .input {
   display: flex;
   flex-direction: column;
   width: 300px;
+}
+.custom-select {
+  color: #8ab4f8;
+  padding: 5px;
+  background-color: #202124;
+  border-radius: 5px;
 }
 
 textarea {
@@ -40,122 +47,37 @@ textarea {
 }
 
 .output textarea {
-  background-color: #303134
-}
-
-.arrow-container {
-  padding: 15px;
+  background-color: #303134;
 }
 
 .arrow-container svg {
   width: 26px;
   height: 26px;
   fill: #5a5a5d;
+  cursor: pointer;
 }
 
-.option-list {
-  width: 100%;
+.submit {
+  color: #818588;
+  cursor: pointer;
 }
-
-.search-bar {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-
-}
-
-input {
-  border: 1px solid #818588;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: #bdc1c6;
-  font-size: 14px;
-  height: 40px;
-  background-color: transparent;
-  width: 100%;
-  
-}
-
-.search-bar input {
-  background: url(https://www.gstatic.com/images/icons/material/system/2x/search_grey600_24dp.png) right 8px center no-repeat;
-  background-size: 24px 24px;
-  padding-left: 16px;
-  padding-right: 40px;
-  width: 90% !important;
-  outline: none;
-}
-
-.search-bar .close-button svg {
-  width: 30px;
-  height: 30px;
-  padding: 6px;
-  fill: #5a5a5d;
-}
-
-.option-container {
-  height: 250px;
-  overflow: auto;
-}
-
-.option-list ul {
-  margin: 15px;
-  padding: 0;
-  height: 1300px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  overflow: auto;
-}
-
-.option-list li {
-  color: #bdc1c6;
-  font-size: 14px;
-  padding: 8px;
-  list-style-type: none;
-  border-radius: 4px;
-}
-
-.option-list li:hover {
-  background-color: #5a5a5d;
-}
-
-
-.list-item {
-  display: flex;
-}
-
-.list-item .icon {
-  padding: 8px;
-  width: 11px;
-  color: #8ab4f8;
-}
-
-.button-container {
-  color:#bdc1c6;
-  padding: 18px;
-  height: 20px;
-}
-
-.select-drop-down input {
-  color: #8ab4f8;
-  padding: 5px 15px;
-  font-size: 15px;
-}
-
-.select-drop-down .down-arrow svg {
+.text-area-container {
   position: relative;
-  left: 265px;
-  top: -33px;
-  width: 26px;
-  height: 26px;
-  fill: #8ab4f8;
 }
 
-.input .delete {
-  position: relative;
-  left: 265px;
-  top: -156px;
-  font-size: 50px;
-  color:#bdc1c6;
+.clear-button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.clear-button svg {
+  width: 25px;
+  height: 25px;
+}
+.clear-button svg path {
+  fill: #bdc1c6;
 }
