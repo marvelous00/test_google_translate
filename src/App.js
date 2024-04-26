@@ -12,7 +12,7 @@ function SelectBox() {
   useEffect(() => {
     // Fetch options from API
     axios
-      .get("http://localhost:8000/languages")
+      .get("https://marv-google-translate-clone.onrender.com/languages")
       .then((response) => {
         setOptions(response.data);
         setOutOptions(response.data);
@@ -32,7 +32,6 @@ function SelectBox() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    // Validate input
     if (
       !selectedOption ||
       selectedOption === "auto" ||
@@ -51,7 +50,7 @@ function SelectBox() {
         textToTranslate: textToTranslate,
       };
       const response = await axios.post(
-        "http://localhost:8000/translation",
+        "https://marv-google-translate-clone.onrender.com/translation",
         data
       );
 
